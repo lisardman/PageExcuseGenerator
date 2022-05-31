@@ -7,7 +7,7 @@ page_excuse = {
         "redan ätit",
         "löda dö",
         "götet",
-        "har käkat brunch nyss"
+        "har käkat brunch nyss",
 		"bukras!"
 }
 
