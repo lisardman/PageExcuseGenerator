@@ -8,6 +8,7 @@ page_excuse = {
         "löda dö",
         "götet",
         "har käkat brunch nyss"
+		"bukras!"
 }
 
 key = random.choice(list(page_excuse))
