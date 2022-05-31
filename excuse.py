@@ -1,16 +1,8 @@
 import random
 
-page_excuse = {
-        "Äta med morsan",
-        "älta med surban",
-        "hongirerhonhirerhongrier",
-        "redan ätit",
-        "löda dö",
-        "götet",
-        "har käkat brunch nyss",
-		"bukras!"
-}
+with open('excuses.txt') as f:
+	excuses = f.readlines()
 
-key = random.choice(list(page_excuse))
+key = random.choice(excuses)
 
 print(key)
