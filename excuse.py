@@ -1,7 +1,7 @@
 import random
 
 with open('excuses.txt') as f:
-	excuses = f.readlines()
+	excuses = f.read().splitlines()
 
 key = random.choice(excuses)
 
