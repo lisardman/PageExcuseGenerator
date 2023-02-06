@@ -1,4 +1,5 @@
 from flask import Flask,render_template
+from waitress import serve
 import random
 
 app = Flask(__name__)
@@ -21,4 +22,5 @@ def create_rainbow():
     return rainbow
 
 if __name__ == '__main__':
-    app.run()
+    #app.run()
+    serve(app, host='127.0.0.1', port=5000, threads=4,url_prefix="/lunch")

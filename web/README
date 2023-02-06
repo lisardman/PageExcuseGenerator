@@ -1,0 +1,25 @@
+Install Web
+
+1. Create a directory and put peg.py, excuses.txt and templates/template.html
+
+
+To install as a service
+
+1. Install waitress globally 
+        sudo python -m pip install waitress
+
+2. copy lunch.service to /etc/systemd/system/
+
+3. Edit lunch.service to match your path with working directory
+
+4. Run sudo systemctl daemon-reload
+
+5. Run sudo systemctl start lunch
+
+6. Now check if service is working with  sudo systemctl status lunch
+
+
+
+
+Enjoy 
+

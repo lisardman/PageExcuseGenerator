@@ -1,0 +1,13 @@
+[Unit]
+Description=Script for running Page Lunch Excuse Generator
+After=syslog.target network.target
+
+[Service]
+WorkingDirectory=/home/flaskapp
+ExecStart=python peg.py
+
+Restart=Always
+RestartSec=120
+
+[Install]
+WantedBy=multi-user.target
