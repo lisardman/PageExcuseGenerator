@@ -10,7 +10,7 @@ To install as a service
 
 2. copy lunch.service to /etc/systemd/system/
 
-3. Edit lunch.service to match your path with working directory
+3. Edit lunch.service to match your path with working directory and the correct user.  Please do not use root. 
 
 4. Run sudo systemctl daemon-reload
 

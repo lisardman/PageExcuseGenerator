@@ -6,6 +6,9 @@ After=syslog.target network.target
 WorkingDirectory=/home/flaskapp
 ExecStart=python peg.py
 
+User=flaskapp
+Group=flaskapp
+
 Restart=Always
 RestartSec=120
 
